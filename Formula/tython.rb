@@ -10,16 +10,16 @@ class Tython < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/oak9io/oak9io/tython/releases/download/v0.0.1/tython_0.0.1_darwin_amd64.tar.gz"
-      sha256 "ea41bd813c52279e0d1f1c2058a6495dcd6452dcf0cfbf59d38b0b214663cdf8"
+      url "https://github.com//oak9io/tython/releases/download/v0.0.1/tython_0.0.1_darwin_amd64.tar.gz"
+      sha256 "37e68ac3cca6360081533f0ecc2601ef637d516913b83ff1c0f31c4b90579226"
 
       def install
         bin.install "tython"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/oak9io/oak9io/tython/releases/download/v0.0.1/tython_0.0.1_darwin_arm64.tar.gz"
-      sha256 "a61f297fdf00fcfd2058fa4054412c876f1525960434bd2d120f33a004d9f0b9"
+      url "https://github.com//oak9io/tython/releases/download/v0.0.1/tython_0.0.1_darwin_arm64.tar.gz"
+      sha256 "0034b109089e084044b7d62957487ed41cb60fa81837447b87d8bff495fd9f00"
 
       def install
         bin.install "tython"
@@ -29,16 +29,16 @@ class Tython < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/oak9io/oak9io/tython/releases/download/v0.0.1/tython_0.0.1_linux_amd64.tar.gz"
-      sha256 "1c6ede05646cf29fdd1c251643228d8b82527e9a1f0613bff14587212320d04d"
+      url "https://github.com//oak9io/tython/releases/download/v0.0.1/tython_0.0.1_linux_amd64.tar.gz"
+      sha256 "86b3bbb1a9d2cbe0d363b3513439dca580d29eceab497ea2c6d9a64bc67340c0"
 
       def install
         bin.install "tython"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oak9io/oak9io/tython/releases/download/v0.0.1/tython_0.0.1_linux_arm64.tar.gz"
-      sha256 "328bc22c82c7e39801b93dc76d8e8bf8e110e05cf675d356862beff917ceefa1"
+      url "https://github.com//oak9io/tython/releases/download/v0.0.1/tython_0.0.1_linux_arm64.tar.gz"
+      sha256 "a2c584838ce7353b476f210036b1a11477ff562029e20182b46abfa89ff182ed"
 
       def install
         bin.install "tython"
