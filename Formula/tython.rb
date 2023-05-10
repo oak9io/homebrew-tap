@@ -5,21 +5,21 @@
 class Tython < Formula
   desc "Tython supports testing and applying (i.e. running) user-created SaC blueprints. This can be done locally on your own machine or through integrations with oak9."
   homepage "https://oak9.io/"
-  version "0.0.10"
+  version "0.0.11"
   license "Apache 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com//oak9io/tython/releases/download/v0.0.10/tython_0.0.10_darwin_amd64.tar.gz"
-      sha256 "e8ed8f6df614ed20bcf9de6a4c6fee43747e8ef8130b4f09142455171e512b2e"
+      url "https://github.com//oak9io/tython/releases/download/v0.0.11/tython_0.0.11_darwin_amd64.tar.gz"
+      sha256 "fb20672d2f53cc26a792fb8b5e174920aacaa4eea31ddaf569262c32e5e9308c"
 
       def install
         bin.install "tython"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com//oak9io/tython/releases/download/v0.0.10/tython_0.0.10_darwin_arm64.tar.gz"
-      sha256 "8eb0f3f1d45a571de928de5fd2f55031af0af2520d5641918eb35c9b9d6c0959"
+      url "https://github.com//oak9io/tython/releases/download/v0.0.11/tython_0.0.11_darwin_arm64.tar.gz"
+      sha256 "c06896a8bb1332d974e5e1a8b1bebba855fa083328cc1a47699fb6a1525ec829"
 
       def install
         bin.install "tython"
@@ -29,16 +29,16 @@ class Tython < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com//oak9io/tython/releases/download/v0.0.10/tython_0.0.10_linux_arm64.tar.gz"
-      sha256 "c39df4226393feadddd2c948160f20d1f7c697933512fb1c00bcaf2cd8768603"
+      url "https://github.com//oak9io/tython/releases/download/v0.0.11/tython_0.0.11_linux_arm64.tar.gz"
+      sha256 "527e3500536943264c3d4e748bd97ccba00c21cac9430974403cb2e02a02ce75"
 
       def install
         bin.install "tython"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com//oak9io/tython/releases/download/v0.0.10/tython_0.0.10_linux_amd64.tar.gz"
-      sha256 "4c1679cd60539d5b1ea0b1a49f165d83e5811b85fa63969800db013dbbe838b5"
+      url "https://github.com//oak9io/tython/releases/download/v0.0.11/tython_0.0.11_linux_amd64.tar.gz"
+      sha256 "ef747bb745fe5a2b9d3d3c0ba25b5d8029d55f27af5dbdbd5578d9e902826c6d"
 
       def install
         bin.install "tython"
